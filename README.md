@@ -24,7 +24,7 @@ The feeder knows the following:
 * Feeding manually
 
 Source codes:
-Osz.ino: This code is worth using in the fall.
-Tel.ino: This code is for winter periods.
+[Osz.ino](https://github.com/MMate2007/IoT-chicken-feeder/blob/main/Osz.ino): This code is worth using in the fall.
+[Tel.ino](https://github.com/MMate2007/IoT-chicken-feeder/blob/main/Tel.ino): This code is for winter periods.
 
 *Translated by Google Translate.*
