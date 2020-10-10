@@ -15,13 +15,6 @@ A következőket tudja az etető:
 Osz.ino: Ezt a kódot érdemes ősszel használni.
 Tel.ino: Ez a kód a téli időszakokra készült.
 
-## Építés
-Szükséges hozzávalók:
-* Servo motor
-* Arduino
-* Wiznet Ethernet Pajzs
-* 2 relés modul
-
 ----------------------------------------------------------------------------------------------------------------------
 
 With this feeder you can feed the hens remotely, all you need is an internet connection and a browser or the Blynk app.
