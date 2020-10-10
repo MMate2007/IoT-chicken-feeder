@@ -12,8 +12,9 @@ A következőket tudja az etető:
 * 2 eszköz be- és kikapcsolása távvezérléssel
 
 ## Forráskódok
-Osz.ino: Ezt a kódot érdemes ősszel használni.
-Tel.ino: Ez a kód a téli időszakokra készült.
+[Osz.ino](https://github.com/MMate2007/IoT-chicken-feeder/blob/main/Osz.ino): Ezt a kódot érdemes ősszel használni.
+[Tel.ino](https://github.com/MMate2007/IoT-chicken-feeder/blob/main/Tel.ino): Ez a kód a téli időszakokra készült.
+A kód magyarázata egyelőre csak a Tel.ino fájlban található meg, de alkalmazható az Osz.ino kódra is.
 
 ----------------------------------------------------------------------------------------------------------------------
 
