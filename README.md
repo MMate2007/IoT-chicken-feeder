@@ -8,5 +8,5 @@ A következőket tudja az etető:
 * Etetés manuálisan
 
 Forráskódok:
-Osz.ino - Ezt a kódot érdemes ősszel használni.
-Tel.ino - Ez a kód a téli időszakokra készült.
+Osz.ino: Ezt a kódot érdemes ősszel használni.
+Tel.ino: Ez a kód a téli időszakokra készült.
