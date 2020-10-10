@@ -11,6 +11,8 @@ Forráskódok:
 Osz.ino: Ezt a kódot érdemes ősszel használni.
 Tel.ino: Ez a kód a téli időszakokra készült.
 
+----------------------------------------------------------------------------------------------------------------------
+
 With this feeder you can feed the hens remotely, all you need is an internet connection and a browser or the Blynk app.
 The feeder knows the following:
 * Feeding fully automatically at specified times
