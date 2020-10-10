@@ -6,7 +6,7 @@
 #include <TimeLib.h>
 #include <WidgetRTC.h>
 
-char auth[] = "v-AZiMG4OHNIiSfhBix-6tE2ZwnvVngP";
+char auth[] = "";
 
 #define W5100_CS  10
 #define SDCARD_CS 4
