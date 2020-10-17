@@ -36,29 +36,6 @@ BLYNK_WRITE(V2)
   terminal.flush();
 }
 
-BLYNK_WRITE(V1)
-{
-  if (param.asInt() == 1)
-  {
-   etetes(1);
-   terminal.println("Etetés...");
-  }
-}
-
-BLYNK_WRITE(V0)
-{
-  if (param.asInt() == 1)
-  {
-    af = true;
-    terminal.println("Aut. et. be.");
-  }
-  if (param.asInt() == 0)
-  {
-    af = false;
-    terminal.println("Aut. et. ki.");
-  }
-}
-
 BLYNK_WRITE(V5)
 {
   if (String("Servo ki") == param.asStr())
