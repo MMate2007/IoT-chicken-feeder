@@ -90,30 +90,32 @@ void etetes(int merteke){
 void orakiiras() {
   ido = String(hour()) + ":" + minute();//Egy változóba mentem az időt
 }
-void servo_on() {
-  csap.write(last_position);
-  csap.attach(3);
-  terminal.println("Motor be!");
-  delay(10000);
+void servo_on() {//Motor bekapcsolásának kódjai
+  csap.write(last_position);//A motor mozogjon a kikapcsolás előtti helyére
+  csap.attach(3);//Motor csatlakoztatása a D3-mas tüskén.
+  terminal.println("Motor be!");//Közlés a felhasználóval, hogy be lett kapcsolva a motor
+  delay(10000);//Némi késleltetés
 }
 void servo_off() {
-  delay(10000);
-  last_position = csap.read();
-  csap.detach();
-  terminal.println("Motor ki!");
+  delay(10000);//Némi késleltetés
+  last_position = csap.read();//A pozíció mentése
+  csap.detach();//Motor kikapcsolása
+  terminal.println("Motor ki!");//Közlés a felhasználóval
 }
-
+//A setup() csak egyszer fut le az Arduino indítása után
 void setup() {
   Serial.begin(9600);
   pinMode(SDCARD_CS, OUTPUT);
-  pinMode(3, OUTPUT);
+  pinMode(3, OUTPUT);//PIN inicializálása
   digitalWrite(SDCARD_CS, HIGH);
-  csap.attach(3);
+  csap.attach(3);//Motor csatlakoztatása
   Blynk.begin(auth);
   setSyncInterval(30*60);
   timer.setInterval(10000L, orakiiras);
+  //Motor mozgatása
   etetes(1);
   csap.write(-45);
+  //Idő lekérése
   orakiiras();
 }
 
@@ -121,7 +123,8 @@ void loop()
 {
   Blynk.run();
   timer.run();
-  orakiiras();
+  orakiiras();//Idő lekérése
+  //Etetés ha elérjük a megadott időpontot
     if (ido == "9:0" || ido == "11:0" || ido == "13:30")
     {
       etetes(2);
@@ -145,12 +148,12 @@ void loop()
       delay(60000);
       ir = false;
     }
-  if (ido == "18:5")
+  if (ido == "18:5")//Este lekapcsoljuk a motort
   {
     servo_off();
     delay(60000);
   }
-  if (ido == "6:55")
+  if (ido == "6:55")//Reggel bekapcsoljuk a motort
   {
     servo_on();
     delay(60000);
