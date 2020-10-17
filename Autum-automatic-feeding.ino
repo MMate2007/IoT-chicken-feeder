@@ -1,4 +1,5 @@
 #define BLYNK_PRINT Serial
+//Könyvtárak inicializálása
 #include <Blynk.h>
 #include <SPI.h>
 #include <BlynkSimpleEthernet.h>
@@ -6,40 +7,41 @@
 #include <TimeLib.h>
 #include <WidgetRTC.h>
 
-char auth[] = "XXXXXXXXXXXXXXXXXXXXXX";
-
+char auth[] = "XXXXXXXXXXXXXXXXXXXXXX";//Kérem írja be ide a Blynk-től kapott auth-token-ját!
+//Inicializálás
 #define W5100_CS  10
 #define SDCARD_CS 4
 
 WidgetTerminal terminal(V5);
 BlynkTimer timer;
 WidgetRTC rtc;
-
+//Szervo motor inicializálása
 Servo csap;
-
+//Változók inicializálása
 String ido;
 int last_position;
 bool ir = false;
+//Ezek a metódusok arra valók, hogy ha a zárójelben lévő PIN értéke módosul akkor fut le a kapcsos zárójelek között lévő kód
 BLYNK_WRITE(V2)
 {
-  if (param.asInt() == 0)
+  if (param.asInt() == 0)//Ha 0 V2 értéke akkor,
   {
-    csap.write(-45);
-    terminal.println("Zárva.");
+    csap.write(-45);//Szervo motor mozgatása és
+    terminal.println("Zárva.");//Kiírás a terminálra.
   }
   if (param.asInt() == 1)
   {
     csap.write(45);
     terminal.println("Nyitva.");
   }
-  terminal.flush();
+  terminal.flush();//Terminál frissítése(szöveg küldése a terminálra).
 }
 
 BLYNK_WRITE(V5)
 {
-  if (String("Servo ki") == param.asStr())
+  if (String("Servo ki") == param.asStr())//Ha terminál értéke "Servo ki"
   {
-    servo_off();
+    servo_off();//Akkor fusson le ez a metódus
   }
   if (String("Servo be") == param.asStr())
   {
@@ -51,15 +53,14 @@ BLYNK_WRITE(V5)
 BLYNK_CONNECTED() {
   rtc.begin();
 }
-
-
+//Saját metódus az etetésre
 void etetes(int merteke){
-  if (csap.attached() == false)
+  if (csap.attached() == false)//Ha a motor ki van kapcsolva akkor kapcsoljuk be!
   {
-    servo_on();
-    ido = "ki";
+    servo_on();//Saját metódus, definiálás később
+    ido = "ki";//Ezen változó segítségével tudjuk majd meg etetés után, hogy a motor ki volt-e kapcsolva
   }
-    switch(merteke)
+    switch(merteke)//Etetés a megadott mértéknek megfelelően
     {
       case 1 :
         csap.write(45);
@@ -79,15 +80,15 @@ void etetes(int merteke){
      csap.write(-45);
      break;
     }
-    if (ido == "ki")
+    if (ido == "ki")//Ha ki volt kapcsolva a motor etetés előtt akkor most is kikapcsoljuk.
     {
-      servo_off();
+      servo_off();//Saját metódus a motor kik, definiálás
       orakiiras();
     }
 }
 
 void orakiiras() {
-  ido = String(hour()) + ":" + minute();
+  ido = String(hour()) + ":" + minute();//Egy változóba mentem az időt
 }
 void servo_on() {
   csap.write(last_position);
