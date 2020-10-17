@@ -1,4 +1,4 @@
-# IoT-chicken-feeder
+# IoT tyúketető
 The project's page: http://mmate.nhely.hu/feeder - it's hungarian.
 The English text is below.
 
@@ -11,7 +11,7 @@ A következőket tudja az etető:
 * Etetés manuálisan
 * 2 eszköz be- és kikapcsolása távvezérléssel
 ----------------------------------------------------------------------------------------------------------------------
-
+# IoT chicken feeder
 With this feeder you can feed the hens remotely, all you need is an internet connection and a browser or the Blynk app.
 The feeder knows the following:
 * Feeding fully automatically at specified times
