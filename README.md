@@ -8,7 +8,7 @@ A projekt oldala: http://mmate.nhely.hu/feeder
 Ezen etető segítségével etethetjük a tyúkokat távolról, mindössze internetkapcsolat és egy böngésző vagy a Blynk applikácó kell hozzá.
 
 ## Forráskódok: 
-###[Osz-automata.ino](https://github.com/MMate2007/IoT-chicken-feeder/blob/main/Osz-automata.ino)
+### [Osz-automata.ino](https://github.com/MMate2007/IoT-chicken-feeder/blob/main/Osz-automata.ino)
 Ez a kód ősszel hasznos. A következő szolgáltatásokat, funkciókat nyújtja ez a kód:
 * Etetés autómatán
 * Etetés manuálisan
