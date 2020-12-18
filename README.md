@@ -32,4 +32,14 @@ The feeder knows the following:
 * Feeding fully automatically at specified times
 * Feeding manually
 
-*Translated by Google Translate.*
+## Source codes:
+### [Autumn-automatic-feeding.ino](https://github.com/MMate2007/IoT-chicken-feeder/blob/main/Source-codes/English-codes/Autum-automatic-feeding.ino)
+With this code the feeder is feeding the hens at this times:
+* 7.00
+* 9.00
+* 10.00
+* 11.00
+* 12.00
+* 13.30
+* 15.00
+* 17.30
