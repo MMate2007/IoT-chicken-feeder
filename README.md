@@ -25,6 +25,21 @@ A következő időpontokkor etet autómatán az etető ha ez a kód fut rajta:
 * 13:30
 * 15:00
 * 17:30
+
+### [Nyari.ino](https://github.com/MMate2007/IoT-chicken-feeder/blob/main/Source-codes/Hungarian-codes/Nyari.ino)
+Ezt a kódot nyáron, nyár vége felé érdemes használni. Reggel és este autómatikusan be-, illetve lekapcsolja a szervo motort, ezzel is megnövelve az élettartamát.
+Funkciók:
+* Etetés mozgásérzékeléskor
+* Autómata etetés megadott időpontokkor
+* Autómatikus mozgásérzékelő kapcsolás reggel és este
+* Autómatikus mozgásérzékelő kapcsolás szabályozása távolról
+* Etetés távolról
+* Mozgásérzékelő kapcsolása manuálisan
+* Csap nyitása, zárása manuálisan
+* Servo motor be- és kikapcsolása manuálisan
+
+**Figyelem! Elképzelhető, hogy ez a kód csak néhány napig fut az Arduino UNO-n! Utána újra kell indítani az etetőt!**
+
 ----------------------------------------------------------------------------------------------------------------------
 # IoT chicken feeder
 With this feeder you can feed the hens remotely, all you need is an internet connection and a browser or the Blynk app.
