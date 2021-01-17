@@ -9,6 +9,7 @@ Az etető megépítéséhez elengedhetetlen alkatrészek:
 - 7,5V-os tápegység jack csatlakozóval
 - műanyag, karton vagy fém lap
 - [Jumper kábelek](https://hobbielektronikabolt.hu/spd/CABL403/40-db-Szines-Breadboard-Jumper-kabel-20-cm-Arduino)
+- Ethernet kábel
 
 További opcionális alkatrészek:
 - [Relé modul](https://hobbielektronikabolt.hu/spd/RLY002/Rele-modul-ket-reles)
