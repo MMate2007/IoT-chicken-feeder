@@ -31,12 +31,12 @@ BLYNK_WRITE(V4){
   if (param.asInt() == 1)
   {
     modosithato = true;
-    terminal.println("Aut. mozg. kapcs. bekapcsolva!");
+    terminal.println("Enabled!");
   }
   if (param.asInt() == 0)
   {
     modosithato = false;
-   terminal.println("Aut. mozg. kapcs. kikapcsolva!");
+   terminal.println("Disabled!");
   }
  terminal.flush();
 }
