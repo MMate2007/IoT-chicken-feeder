@@ -20,3 +20,5 @@ További opcionális alkatrészek:
 
 ## Összeszerelés
 1. Pattintsa az ethernet pajzsot az Arduino UNO-ra!
+
+# Building
