@@ -6,7 +6,7 @@
 #include <TimeLib.h>
 #include <WidgetRTC.h>
 
-char auth[] = "XXXXXXXX";
+char auth[] = "XXXXXXXX"; //Kérem írja be a Blynk-től kapott auth token-jét!
 
 #define W5100_CS  10
 #define SDCARD_CS 4
