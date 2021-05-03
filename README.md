@@ -4,6 +4,7 @@ The English text is below.
 
 ## [Tavaszbovitett.ino](https://github.com/MMate2007/IoT-chicken-feeder/blob/main/tavaszbovitett.ino)
 Ezt a programot tavasszal érdemes használni.
+*Vigyázat! Ezzel a programmal nem szabad az etetőt egyetlen etetőnek használni sokáig(3 nap), mert kevés gabonát ad naponta!*
 
 **Funkciók**:
 - Csap vezérlése.
