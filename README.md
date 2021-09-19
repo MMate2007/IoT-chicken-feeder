@@ -1,7 +1,24 @@
-# IoT tyúketető
-The project's page: http://mmate.nhely.hu/feeder - it's hungarian.
-The English text is below.
+# IoT tyúketető / IoT chicken feeder
+The project's page: http://mmate.nhely.hu/feeder
 
+## [Univerzalis.ino](https://github.com/MMate2007/IoT-chicken-feeder/blob/main/univerzalis.ino)
+Ez a kód télen-nyáron használható, mert a reggel és este időpontokat lehet módosítani az alkalmazásból.
+
+**Funkciók**:
+- Csap vezérlése.
+- Etetés az alkalmazásból manuálisan.
+- Reggel-este időpontok beállítása.
+- Alkalmankénti kiadott táplálék mennyiségének szabályzása.
+- Autómatikus etetés.
+------------------------------------------------------------------------------------------------------
+This code could be use in the whole year because you can edit the morning and the evening time from the app.
+
+**Features**:
+- Controlling the tap.
+- Feeding from the app manually.
+- Morning-evening time settings.
+- Food quantity edit.
+- Auto feeding.
 ## [Tavaszbovitett.ino](https://github.com/MMate2007/IoT-chicken-feeder/blob/main/tavaszbovitett.ino)
 Ezt a programot tavasszal érdemes használni.
 *Vigyázat! Ezzel a programmal nem szabad az etetőt egyetlen etetőnek használni sokáig(3 nap), mert kevés gabonát ad naponta!*
